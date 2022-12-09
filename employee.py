@@ -25,9 +25,9 @@ class Employee:
             output = self.name + " works on a contract of " + str(self.hours) + " hours at " + str(self.pay_hour) + "/hour"
         
         if self.contracts:
-            output += " and receives a commision for " + str(self.contracts) + " contract(s) at " + str(self.commision_contract) + "/contract"
+            output += " and receives a commission for " + str(self.contracts) + " contract(s) at " + str(self.commision_contract) + "/contract"
         if self.bonus_commision:
-            output += " and receives a bonus commission of " + str(self.bonus_commision) + ". "
+            output += " and receives a bonus commission of " + str(self.bonus_commision)
         
         output += ". Their total pay is " + str(self.get_pay()) + "."
         return output
